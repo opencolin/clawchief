@@ -36,10 +36,17 @@ read the last tick + `HANDOFF.md` and resume.
 - [tick 19] Set up crons (EA sweep / daily-task-prep / BD) — hit the `operator.admin` scope-upgrade gate; documented as a security teaching point. Heartbeat already proves proactivity.
 - [tick 20] README turned into front-door index (releases + modules + run docs).
 
-## Next
-- Distribute v0.5 lab when ready.
-- Final: update HANDOFF to "complete"; final summary; (optional) merge release branches.
-- gog Google auth — BLOCKED on user's OAuth desktop-client JSON (user opted in).
+- [tick 21] All 5 release labs distributed to worktrees + merged/canonicalized onto `piedpiper`. v0.5 synced to the canonical (more accurate) version.
+- [tick 22] HANDOFF marked complete. Workshop deliverables done.
+
+## DONE — goal complete
+Workshop "Build Your Own Chief-of-Staff AI" is built: running container demo (OpenClaw + Token Factory/Kimi + nemoclaw/Nemotron + Tavily + 30s heartbeat), full curriculum (README/ROADMAP/5 modules/2 demos/INSTRUCTOR/TROUBLESHOOTING), council-decided roadmap, and 5 release labs each in its own git worktree.
+
+## Optional follow-ups (user-gated)
+- Connect Google (`gog` auth) — needs the user's OAuth desktop-client JSON.
+- Enable crons (needs `operator.admin` scope approval + gog).
+- Rotate the Token Factory key (pasted in plaintext).
+- Push `piedpiper` + `release/*` to the fork.
 
 ## Demo runbook (verified commands)
 ```

@@ -18,17 +18,19 @@ Read this + the last entry in `PROGRESS.md` to pick up exactly where work stoppe
 - Docker = Colima (linux/arm64). Docker Desktop is uninstalled; `docker compose`/`buildx` are brew-installed and symlinked into `~/.docker/cli-plugins/`.
 - `gog` 0.20.0 installed on host (Homebrew). gogcli GHCR image is amd64-only; the container uses the native arm64 release binary baked by `docker/Dockerfile`.
 
-## What's DONE
-- Phase 0 foundation (PROGRESS ticks 0–7): forked, themed Pied Piper, Dockerized, model wired, verified.
-- Phase 1 demos (ticks 10–12): nemoclaw (Nemotron) ✓, Tavily web-search plugin ✓, 30s heartbeat ✓ — all live in the container.
-- Worktree helper: `workshop/scripts/make-release-worktrees.sh v0.1 …` (run once roadmap lands).
+## What's DONE — workshop COMPLETE
+- **Container demo** (PROGRESS ticks 0–12): forked, themed Pied Piper, Dockerized, model wired, verified live; nemoclaw (Nemotron) ✓, Tavily web-search ✓, 30s heartbeat ✓ — all live.
+- **Workshop content**: README (front door), `ROADMAP.md` (council decision), 5 modules (`modules/`), 2 verified demos (`demos/`), `INSTRUCTOR.md`, `TROUBLESHOOTING.md`.
+- **PM council** (workflow `wf_e8514e65-39e`): 4 PM roadmaps + Tavily research → `ROADMAP.md`; raw in `council/`.
+- **5 release worktrees** at `/Users/colin/clawchief-v0.1 … -v2.0` (branches `release/vX`), each with its `workshop/releases/vX.md` lab. All 5 labs also merged onto `piedpiper`.
+- **Release labs** (workflow `wf_686688ed-fe2`): one hands-on lab per release, distributed to worktrees + canonicalized on `piedpiper`.
+- Gilfoyle = Security Ops & IT infra (priority-map + `modules/security-hardening.md`).
 
-## What's PENDING
-1. PM council `wf_e8514e65-39e` → `ROADMAP.md` (v0.1→v2.0).
-2. Git worktree per release (run the helper); per-release `releases/vX.md` plans.
-3. Fanned-out per-release production workflow → content into each worktree.
-4. Google `gog` auth — BLOCKED on the user's Google OAuth desktop-client JSON (user opted in earlier).
-5. Crons (EA sweep / daily-task-prep / BD).
+## What's PENDING (optional / user-gated)
+1. **Google `gog` auth** — BLOCKED on the user's Google OAuth desktop-client JSON (user opted in; mechanics in `SETUP-GOG.md` + v1.0 lab).
+2. **Enable crons** — created commands exist; needs `operator.admin` device scope approval (see `modules/crons-and-heartbeat.md` security note) + gog for real data.
+3. **Rotate the Token Factory key** — it was pasted in plaintext; rotate per `modules/security-hardening.md`.
+4. **Push** `piedpiper` + `release/*` branches to the fork (not pushed yet).
 
 ## Conventions
 - Tick-log every work-unit in `PROGRESS.md`.
