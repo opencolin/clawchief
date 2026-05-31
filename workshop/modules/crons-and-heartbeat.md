@@ -45,6 +45,16 @@ $EXEC cron list
 
 > Cron is minute-granularity; sub-minute "ticks" are the heartbeat's job.
 
+> **Security gate (you will hit this):** mutating crons needs the device's
+> `operator.admin` scope. A freshly-onboarded local CLI is deliberately scoped to
+> `operator.write` only (least privilege — Gilfoyle approves), so the first
+> `cron add` triggers a **scope-upgrade approval**:
+> `pairing required: device is asking for more scopes than currently approved`.
+> Approve the device from an already-admin context (`… devices list` → `… devices
+> approve <requestId>`) — note approving is itself an admin op, so do it from the
+> gateway owner/admin token, not the write-scoped CLI. This is the right default:
+> a write-scoped agent can run your skills but can't silently reschedule itself.
+
 ## Design rule
 
 Keep cron prompts **short** and let the **skill** carry the workflow. The cron
