@@ -29,11 +29,29 @@ The release plan (v0.1 → v2.0) is decided by a **council of PM agents** (see
 fanned-out **workflow**. Progress is tick-logged in `PROGRESS.md`; resume state
 lives in `HANDOFF.md`.
 
-## Map
+## Releases (one git worktree each — see `ROADMAP.md`)
 
-- `ROADMAP.md` — the council-decided v0.1→v2.0 release plan
-- `releases/vX.md` — per-release plan (one git worktree per release)
-- `PROGRESS.md` — numbered tick log (resume anchor)
-- `HANDOFF.md` — full state for another agent to pick up
-- `council/` — PM council proposals + decision record
-- `demos/` — nemoclaw + Tavily demo configs/scripts
+| Release | Theme | Lab |
+|---|---|---|
+| v0.1 | Hello, Agent — a container that texts you back | `releases/v0.1.md` |
+| v0.5 | Give it a self — persona + your-data workspace | `releases/v0.5.md` |
+| v1.0 | Hands & senses — skills + Tavily + gog | `releases/v1.0.md` |
+| v1.5 | It acts on its own — crons + 30s heartbeat | `releases/v1.5.md` |
+| v2.0 | The Chief of Staff, shipped — nemoclaw + hardening | `releases/v2.0.md` |
+
+## Teaching modules (reused across releases)
+
+- `modules/00-prerequisites.md` — Docker + key, 5-minute quickstart
+- `modules/architecture.md` — the 5 separations (policy is data, workflow is code)
+- `modules/make-it-yours.md` — re-theme to your own people/programs
+- `modules/crons-and-heartbeat.md` — the WHEN layer
+- `modules/security-hardening.md` — the Gilfoyle module (secrets, rotation, hardening)
+- `demos/nemoclaw.md`, `demos/tavily-search.md` — the two wow demos
+
+## Run-the-workshop docs
+
+- `ROADMAP.md` — council-decided v0.1→v2.0 plan · `council/` — raw PM proposals + research
+- `INSTRUCTOR.md` — run-of-show, live-demo script, timing
+- `TROUBLESHOOTING.md` — the 8 issues the room will hit
+- `PROGRESS.md` — numbered tick log (resume anchor) · `HANDOFF.md` — full resume state
+- `scripts/make-release-worktrees.sh` — create the per-release worktrees
