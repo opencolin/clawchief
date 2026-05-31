@@ -21,8 +21,22 @@ read the last tick + `HANDOFF.md` and resume.
 - [tick 8] Scaffolded `workshop/` (README, PROGRESS, HANDOFF). Goal: workshop on building a chief-of-staff AI.
 - [tick 9] Launching PM-council workflow (Tavily research → 5 PM personas propose → council chair decides v0.1→v2.0 roadmap).
 
+- [tick 10] nemoclaw demo VERIFIED: agent turn on `nvidia/Nemotron-3-Nano-Omni` → real Anton standup. Alias `nemoclaw` added. (`demos/nemoclaw.md`)
+- [tick 11] Tavily plugin replicated into container (key → state volume); VERIFIED live web search (Nebius Q1'26 result + source). (`demos/tavily-search.md`)
+- [tick 12] 30s heartbeat configured (`agents.defaults.heartbeat.every=30s`, model=Nemotron) and observed ticking (`reason: interval`, silent).
+
 ## Next
-- Council returns roadmap → write ROADMAP.md + releases/vX.md.
-- Create one git worktree per release (v0.1 … v2.0).
+- [pending] Council workflow `wf_e8514e65-39e` → write `ROADMAP.md` + `releases/vX.md`.
+- Create one git worktree per release (v0.1 … v2.0) at `/Users/colin/clawchief-vX`.
 - Fan out per-release production workflows (worktree-isolated).
-- Build nemoclaw (Nemotron) demo + Tavily search demo in the container.
+- gog Google auth — BLOCKED on user's OAuth desktop-client JSON.
+
+## Demo runbook (verified commands)
+```
+EXEC="docker compose -f docker/docker-compose.yml exec -T clawchief node openclaw.mjs"
+$EXEC agent --agent main --message "…"                     # chief-of-staff turn (Kimi-K2.6)
+$EXEC agent --agent main --model tokenfactory/nvidia/Nemotron-3-Nano-Omni --message "…"   # nemoclaw
+$EXEC plugins list | grep tavily                            # Tavily enabled
+$EXEC system heartbeat last                                 # 30s tick
+$EXEC system heartbeat disable                              # stop ticks (cost control)
+```

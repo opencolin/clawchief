@@ -19,16 +19,16 @@ Read this + the last entry in `PROGRESS.md` to pick up exactly where work stoppe
 - `gog` 0.20.0 installed on host (Homebrew). gogcli GHCR image is amd64-only; the container uses the native arm64 release binary baked by `docker/Dockerfile`.
 
 ## What's DONE
-- Phase 0 foundation (see PROGRESS ticks 0–7): forked, themed Pied Piper, Dockerized, model wired, verified.
+- Phase 0 foundation (PROGRESS ticks 0–7): forked, themed Pied Piper, Dockerized, model wired, verified.
+- Phase 1 demos (ticks 10–12): nemoclaw (Nemotron) ✓, Tavily web-search plugin ✓, 30s heartbeat ✓ — all live in the container.
+- Worktree helper: `workshop/scripts/make-release-worktrees.sh v0.1 …` (run once roadmap lands).
 
 ## What's PENDING
-1. PM council → `ROADMAP.md` (v0.1→v2.0).
-2. Git worktree per release; per-release `releases/vX.md` plans.
-3. Fanned-out per-release production workflows (worktree-isolated).
-4. `nemoclaw` demo: OpenClaw on `nvidia/Nemotron-…` via Token Factory.
-5. Tavily web-search wired into the container (MCP) + demo.
-6. Google `gog` auth — BLOCKED on the user's Google OAuth desktop-client JSON (user opted in earlier).
-7. Crons (EA sweep / daily-task-prep / BD) + 30s heartbeat.
+1. PM council `wf_e8514e65-39e` → `ROADMAP.md` (v0.1→v2.0).
+2. Git worktree per release (run the helper); per-release `releases/vX.md` plans.
+3. Fanned-out per-release production workflow → content into each worktree.
+4. Google `gog` auth — BLOCKED on the user's Google OAuth desktop-client JSON (user opted in earlier).
+5. Crons (EA sweep / daily-task-prep / BD).
 
 ## Conventions
 - Tick-log every work-unit in `PROGRESS.md`.
