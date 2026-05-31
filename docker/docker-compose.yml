@@ -8,6 +8,9 @@ services:
     image: clawchief:local
     container_name: clawchief
     restart: unless-stopped
+    env_file:
+      - path: .env
+        required: false
     environment:
       # --- Model provider: set ONE of these in docker/.env -------------------
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}

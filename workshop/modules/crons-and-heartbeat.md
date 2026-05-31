@@ -54,6 +54,13 @@ $EXEC cron list
 > approve <requestId>`) — note approving is itself an admin op, so do it from the
 > gateway owner/admin token, not the write-scoped CLI. This is the right default:
 > a write-scoped agent can run your skills but can't silently reschedule itself.
+>
+> **Resolution (local single-user):** grant the paired device the full operator
+> scope set in `~/.openclaw/devices/paired.json` (`scopes` + `approvedScopes` +
+> `tokens.operator.scopes` → `["operator.read","operator.write","operator.admin",
+> "operator.pairing"]`) and restart the gateway. Do this **deliberately** — it
+> elevates that device to admin. In a multi-user/remote setup, approve from an
+> existing admin device instead.
 
 ## Design rule
 

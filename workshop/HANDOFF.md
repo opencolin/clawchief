@@ -26,11 +26,11 @@ Read this + the last entry in `PROGRESS.md` to pick up exactly where work stoppe
 - **Release labs** (workflow `wf_686688ed-fe2`): one hands-on lab per release, distributed to worktrees + canonicalized on `piedpiper`.
 - Gilfoyle = Security Ops & IT infra (priority-map + `modules/security-hardening.md`).
 
-## What's PENDING (optional / user-gated)
-1. **Google `gog` auth** — BLOCKED on the user's Google OAuth desktop-client JSON (user opted in; mechanics in `SETUP-GOG.md` + v1.0 lab).
-2. **Enable crons** — created commands exist; needs `operator.admin` device scope approval (see `modules/crons-and-heartbeat.md` security note) + gog for real data.
-3. **Rotate the Token Factory key** — it was pasted in plaintext; rotate per `modules/security-hardening.md`.
-4. **Push** `piedpiper` + `release/*` branches to the fork (not pushed yet).
+## Follow-ups status
+- ✅ **Pushed** `piedpiper` + 5 `release/*` branches to `origin` (opencolin/clawchief).
+- ✅ **Crons** created (scope gate solved by granting the device full operator scopes in `devices/paired.json`): `Daily task prep` ENABLED; `EA sweep` + `Daily BD sourcing` created DISABLED (flip on once gog is live: `… cron enable "EA sweep"`).
+- 🟡 **Google `gog`** — keyring is live in the container (`docker/.env` GOG_KEYRING_PASSWORD, gog volume chowned). One step left, needs the user's OAuth **Desktop** client JSON: `./docker/gog-connect.sh <client.json> <email>` then `--finish`. (Host gog has no tokens — can't shortcut.)
+- 🟡 **Rotate Token Factory key** (was pasted in plaintext) — helper ready: `./docker/rotate-tf-key.sh` (mint new key in console first, then revoke old).
 
 ## Conventions
 - Tick-log every work-unit in `PROGRESS.md`.
