@@ -25,10 +25,16 @@ read the last tick + `HANDOFF.md` and resume.
 - [tick 11] Tavily plugin replicated into container (key → state volume); VERIFIED live web search (Nebius Q1'26 result + source). (`demos/tavily-search.md`)
 - [tick 12] 30s heartbeat configured (`agents.defaults.heartbeat.every=30s`, model=Nemotron) and observed ticking (`reason: interval`, silent).
 
+## Phase 2 — Council, roadmap, worktrees, release labs
+- [tick 13] Foundational modules written: architecture, 00-prerequisites, crons-and-heartbeat, make-it-yours, security-hardening; plus TROUBLESHOOTING + INSTRUCTOR.
+- [tick 14] PM council workflow `wf_e8514e65-39e` ran (Tavily research + 4 PM roadmaps: MVP/DX/Security/Curriculum). 5th PM was slow → stopped after 5/6 results (enough). Raw saved to `council/`.
+- [tick 15] Synthesized `ROADMAP.md` — 5 releases v0.1→v2.0 (Hello Agent / Give it a self / Hands & senses / It acts on its own / Shipped).
+- [tick 16] Created 5 git worktrees: `/Users/colin/clawchief-v0.1 … -v2.0` on `release/vX` branches.
+- [tick 17] Launched release-labs workflow `wf_686688ed-fe2` (one agent/release → `releases/vX.md`). Note: workflow `args` came through undefined → inline the data in the script instead.
+
 ## Next
-- [pending] Council workflow `wf_e8514e65-39e` → write `ROADMAP.md` + `releases/vX.md`.
-- Create one git worktree per release (v0.1 … v2.0) at `/Users/colin/clawchief-vX`.
-- Fan out per-release production workflows (worktree-isolated).
+- Distribute returned labs into each worktree (`/Users/colin/clawchief-vX/workshop/releases/vX.md`) + commit per worktree.
+- Build top-level workshop INDEX tying modules + releases.
 - gog Google auth — BLOCKED on user's OAuth desktop-client JSON.
 
 ## Demo runbook (verified commands)
