@@ -35,8 +35,8 @@ If one of the calendars the principal cares about is not visible in the all-cale
 
 ## Defaults
 
-- principal -> `{{OWNER_NAME}}`
-- assistant -> `{{ASSISTANT_NAME}}`
+- principal -> `Richard Hendricks`
+- assistant -> `Anton`
 - primary outbound operational mailbox -> `{{ASSISTANT_EMAIL}}`
 - default write calendar for general business meetings -> `{{PRIMARY_WORK_EMAIL}}`
 - primary proactive update route -> `{{PRIMARY_UPDATE_CHANNEL}} -> {{PRIMARY_UPDATE_TARGET}}`

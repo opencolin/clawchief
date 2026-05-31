@@ -1,0 +1,10 @@
+# Secrets / local env — never commit
+docker/.env
+**/client_secret*.json
+**/*credentials*.json
+gog-home/
+.gog/
+
+# OS / editor
+.DS_Store
+*.swp

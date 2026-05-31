@@ -1,6 +1,6 @@
 ---
 name: daily-task-prep
-description: "Prepare {{OWNER_NAME}}'s task list for the day using `clawchief/tasks.md` plus their calendars. Use when a cron or direct request asks to prepare today's tasks before the day starts; when recurring weekday tasks, due-today backlog items, and principal-owned meetings / calls should be added to `## Today`; or when the task list needs a safe early-morning refresh without overwriting manual priorities."
+description: "Prepare Richard Hendricks's task list for the day using `clawchief/tasks.md` plus their calendars. Use when a cron or direct request asks to prepare today's tasks before the day starts; when recurring weekday tasks, due-today backlog items, and principal-owned meetings / calls should be added to `## Today`; or when the task list needs a safe early-morning refresh without overwriting manual priorities."
 ---
 
 # Daily Task Prep

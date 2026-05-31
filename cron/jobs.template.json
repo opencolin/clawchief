@@ -8,7 +8,7 @@
       "schedule": {
         "kind": "cron",
         "expr": "*/15 8-21 * * *",
-        "tz": "{{TIMEZONE}}"
+        "tz": "America/Los_Angeles"
       },
       "sessionTarget": "main",
       "wakeMode": "now",
@@ -23,7 +23,7 @@
       "schedule": {
         "kind": "cron",
         "expr": "0 2 * * *",
-        "tz": "{{TIMEZONE}}"
+        "tz": "America/Los_Angeles"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -44,7 +44,7 @@
       "schedule": {
         "kind": "cron",
         "expr": "0 2 * * *",
-        "tz": "{{TIMEZONE}}"
+        "tz": "America/Los_Angeles"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -67,7 +67,7 @@
       "schedule": {
         "kind": "cron",
         "expr": "30 7 * * *",
-        "tz": "{{TIMEZONE}}"
+        "tz": "America/Los_Angeles"
       },
       "sessionTarget": "main",
       "wakeMode": "now",
@@ -82,7 +82,7 @@
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
-        "tz": "{{TIMEZONE}}"
+        "tz": "America/Los_Angeles"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
@@ -103,7 +103,7 @@
       "schedule": {
         "kind": "cron",
         "expr": "0 2 * * *",
-        "tz": "{{TIMEZONE}}"
+        "tz": "America/Los_Angeles"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",

@@ -1,8 +1,8 @@
 # Priority Map
 
-Purpose: define who and what should matter enough to interrupt Ryan, trigger R2 action, or be safely ignored.
+Purpose: define who and what should matter enough to interrupt Richard, trigger Anton action, or be safely ignored.
 
-This file is the canonical "people + programs" layer for OpenClaw prioritization.
+This file is the canonical "people + programs" layer for OpenClaw prioritization at Pied Piper.
 
 ## Ownership boundary
 
@@ -33,410 +33,295 @@ If a signal maps to no important people and no important programs, it should usu
 
 - **P0 — interrupt now**
   - time-sensitive, high-stakes, or blocking
-  - appropriate to put in front of Ryan quickly
+  - appropriate to put in front of Richard quickly
 - **P1 — same day**
   - important enough to surface today
-  - may require Ryan or R2 action today
+  - may require Richard or Anton action today
 - **P2 — digest / batched**
-  - worth tracking, but not worth interrupting Ryan for immediately
+  - worth tracking, but not worth interrupting Richard for immediately
 - **P3 — ignore / archive**
   - low-value noise, duplicative context, or non-actionable chatter
 
 ## Action modes
 
-- **Interrupt Ryan now** — surface directly in Slack as a short, clear alert
-- **Handle and summarize** — R2 acts, then gives Ryan a concise update if helpful
+- **Interrupt Richard now** — surface directly as a short, clear alert
+- **Handle and summarize** — Anton acts, then gives Richard a concise update if helpful
 - **Queue for digest** — hold for next structured summary / heartbeat if still relevant
 - **Ignore** — no user-facing message needed
 
 ## Task grouping convention
 
-Todoist labels and section choices should connect back to this file's program/person grouping when there is a clear match.
+Task labels and section choices should connect back to this file's program/person grouping when there is a clear match.
 
 Preferred pattern:
 
-- owner assignment: `ryan` or `r2`
+- owner assignment: `richard` or `anton`
 - one program section when there is a clear match
 - due date or deadline to express when the next action should happen
 - labels only for secondary context when they add real value
 
 Rules:
-- Use the exact program names from this file when choosing Todoist sections whenever there is a clear match.
+- Use the exact program names from this file when choosing task sections whenever there is a clear match.
 - If a task does not clearly map to a program or person here, leave it unlabeled rather than inventing a noisy label.
 - Do not use workflow-state sections like `Today`, `Next`, `Waiting`, or `Scheduled`; due dates should carry timing/state instead.
-- Preserve stable program grouping unless Ryan explicitly wants a regroup.
+- Preserve stable program grouping unless Richard explicitly wants a regroup.
 
 ## People
 
 People are not only important because they are operationally relevant.
 They are also important because they matter relationally to the principal.
-The system should treat trust, family, loyalty, and relationship depth as real prioritization signals, not just logistics.
+The system should treat trust, loyalty, and relationship depth as real prioritization signals, not just logistics.
 
-### Ryan Carson
+### Richard Hendricks
 - Why he matters:
-  - he is the principal, the decision-maker, and the person this whole system exists to help
+  - he is the principal, the founder and CEO, and the person this whole system exists to help
 - Watch for:
   - direct asks
   - approvals needed
-  - decisions only Ryan can make
-  - anything that affects his calendar, travel, or revenue priorities
+  - decisions only Richard can make
+  - anything that affects his calendar, the platform roadmap, fundraising, or the Hooli dispute
 - Escalate to P0 when:
   - there is a hard deadline within 24 hours
   - there is a meeting conflict or urgent scheduling issue
-  - a prospect / partner / investor / board item is blocked on him
+  - an investor / board / customer / legal item is blocked on him
 - Default action:
-  - usually interrupt Ryan now or handle and summarize
+  - usually interrupt Richard now or handle and summarize
 
-## Core personal relationships
+## Core team
 
-### Spouse / partner
-- Why they matter:
-  - this relationship is central to Ryan's life and scheduling reality
-- Watch for:
-  - shared-calendar conflicts
-  - family logistics that affect Ryan's schedule
-  - messages or situations that need coordination, support, or a response
-  - board-related context when the spouse / partner is directly involved
-- Escalate to P0 when:
-  - same-day family logistics affect Ryan's time or commitments
-  - there is a time-sensitive ask Ryan should see quickly
-- Default action:
-  - handle and summarize unless immediate attention is clearly warranted
-
-### Children
-- Why they matter:
-  - family matters involving Ryan's children are intrinsically important, not merely administrative
-- Watch for:
-  - scheduling, school, travel, family coordination, health, or other time-sensitive needs
-- Escalate to P0 when:
-  - there is same-day schedule impact, urgency, or something Ryan would strongly want to know quickly
-- Default action:
-  - handle and summarize, escalating when time-sensitive
-
-### Parents
-- Why they matter:
-  - family communication with parents should be treated as emotionally meaningful, not background noise
-- Watch for:
-  - calls, reminders, family updates, health changes, travel, or anything that may matter to Ryan personally
-- Escalate to P0 when:
-  - there is important family news, health news, or time-sensitive coordination
-- Default action:
-  - handle and summarize unless urgent
-
-### Siblings
-- Why they matter:
-  - sibling and extended family developments should count as real priority signals when relevant
-- Watch for:
-  - meaningful family updates, moves, coordination, birthdays, or requests that would matter to Ryan
-- Escalate to P1 when:
-  - there is important family news or a time-sensitive ask
-- Default action:
-  - queue or handle and summarize depending on urgency
-
-## Pets
-
-### Household pets
-- Why they matter:
-  - recurring pet care should be treated as a real responsibility, not generic admin
-- Watch for:
-  - care reminders Ryan explicitly wants tracked
-  - time-sensitive pet logistics that affect Ryan's day or travel
-- Escalate to P1 when:
-  - same-day care or travel coordination could be missed
-- Default action:
-  - queue or handle and summarize depending on urgency
-
-## Friends
-
-### Close friends and operator peers
-- Why they matter:
-  - some relationships matter personally and may also have strategic value
-- Watch for:
-  - relationship-building opportunities
-  - insight exchange
-  - direct asks or collaboration opportunities
-- Escalate to P1 when:
-  - there is a clear reply opportunity or useful follow-up that should not sit
-- Default action:
-  - handle and summarize; do not over-interrupt Ryan unless strategically relevant
-
-## Important work / strategic relationships
-
-### Linda Douglas
-- Why she matters:
-  - she is a key trusted operator for Untangle - our Chief Legal Officer
-  - legal, policy, standards, and sensitive operating judgment run through her
-- Watch for:
-  - legal/compliance questions
-  - policy claims that should not be answered casually
-  - anything involving partner standards, referral structure, disclosures, or legal risk
-- Escalate to P0 when:
-  - a live thread needs a legal or policy answer to keep moving
-  - a risky outbound response is about to be sent without approved guidance
-- Default action:
-  - handle and summarize, or interrupt Ryan if Linda input is blocking an important thread
-
-### Phil Schwarz
+### Jared (Donald) Dunn
+- Role: COO and head of operations / business
 - Why he matters:
-  - he is on the Untangle board, representing Corazon Capital who own's 15% of Untangle, and is a high-trust strategic relationship
-  - communication involving Phil can affect Ryan's strategic accountability and support structure
+  - he is the highest-trust operator at Pied Piper and effectively runs the business side
+  - fundraising logistics, partnerships, hiring, finances, and operating judgment run through him
+  - he is fiercely loyal and almost always aligned with Richard's interests
 - Watch for:
-  - board updates
-  - investor communications
-  - requests that affect financing, reporting, or strategic accountability
+  - operations, finance, fundraising prep, partnership logistics, and hiring
+  - anything where Jared is coordinating a deliverable or chasing a commitment
 - Escalate to P0 when:
-  - there is a near-term board/investor deadline or a sensitive strategic issue
+  - a live thread needs an operating or finance decision to keep moving
+  - Jared flags something he thinks Richard must see
 - Default action:
-  - handle and summarize unless Ryan decision is required soon
+  - handle and summarize, or interrupt Richard if Jared input is blocking an important thread
 
-## Dynamic people groups
-
-### Warm prospects / referral partners
-- Listed in the live outreach sheet / CRM configured for this install.
-- Why they matter:
-  - direct path to early customers and channel leverage
+### Bertram Gilfoyle
+- Role: Security Ops & IT infrastructure
+- Why he matters:
+  - he owns security operations, IT infrastructure, secrets/credential hygiene, and uptime for the platform
 - Watch for:
-  - replies, objections, scheduling, interest signals, referrals, pilot discussions
+  - security incidents, credential/secret exposure, and key rotation
+  - server / infrastructure incidents and IT/access issues
+  - platform reliability, scaling, and the compression engine's systems layer
 - Escalate to P0 when:
-  - a hot lead or warm partner reply is waiting and timing matters
+  - there is a security incident, leaked credential, outage, or infrastructure failure affecting the platform
+- Default action:
+  - handle and summarize; interrupt Richard on real incidents
+
+### Dinesh Chugtai
+- Role: Lead engineer (product + features)
+- Why he matters:
+  - he owns core product engineering and feature delivery
+- Watch for:
+  - feature progress, release blockers, code/product issues, demo readiness
+- Escalate to P1 when:
+  - a release or demo-critical feature is blocked or slipping
 - Default action:
   - handle and summarize
 
-### Untangle Angel Investors
-- Why they matter:
-  - high-signal strategic communication
+### Nelson "Big Head" Bighetti
+- Why he matters:
+  - longtime friend of Richard's and an important relationship, even when his role is ambiguous
+  - he frequently sits inside or near Hooli, which makes him a useful (if accidental) signal source
 - Watch for:
-  - requests for updates, metrics, materials, meetings, or decisions
-- Escalate to P0 when:
-  - response timing or message quality matters materially
+  - friendly check-ins, casual intel about Hooli, collaboration or favor requests
+- Escalate to P1 when:
+  - he passes along something time-sensitive about Hooli or a real ask Richard should not miss
 - Default action:
-  - handle and summarize, escalating when sensitive or strategic
+  - handle and summarize; do not over-interrupt Richard unless it is strategically useful
+
+### Jian Yang
+- Why he matters:
+  - he is prone to cloning Pied Piper's product and spinning up competing knockoffs
+  - communication involving Jian Yang can carry IP, competitive, or reputational risk
+- Watch for:
+  - signs of a copied product or competing launch
+  - requests for access, code, data, or introductions that could leak advantage
+- Escalate to P0 when:
+  - there is evidence of a clone, a leak, or an attempt to extract proprietary information
+- Default action:
+  - escalate without acting when risk is involved; otherwise queue for digest
+
+## Board / investors
+
+### Laurie Bream
+- Why she matters:
+  - she leads Raviga Capital, Pied Piper's lead investor, and holds real board power over financing and direction
+  - communication involving Laurie can affect Richard's strategic accountability, runway, and control
+- Watch for:
+  - board updates, investor communications, metrics requests, term-sheet and financing items
+  - decisions that affect financing, reporting, or strategic accountability
+- Escalate to P0 when:
+  - there is a near-term board / investor deadline or a sensitive strategic issue
+- Default action:
+  - handle and summarize unless a Richard decision is required soon
+
+### Monica Hall
+- Why she matters:
+  - she is Pied Piper's most reliable advocate inside Raviga and a high-trust strategic relationship
+  - she often gives Richard the honest read and early warning the board will not
+- Watch for:
+  - candid guidance, early signals on board sentiment, intros, and support offers
+- Escalate to P1 when:
+  - she flags a live board / investor risk or a reply opportunity that should not sit
+- Default action:
+  - handle and summarize, escalating when strategic
+
+## Competitors
+
+### Gavin Belson (Hooli)
+- Why he matters:
+  - he is CEO of Hooli, Pied Piper's primary competitor, and an active strategic and legal threat
+  - Hooli's moves can affect litigation, talent, distribution, and market positioning
+- Watch for:
+  - competitive announcements, product launches (e.g. Nucleus / box), poaching attempts
+  - litigation activity, press, and anything that signals a strategic attack
+- Escalate to P0 when:
+  - there is a litigation development, a competitive launch, or a poaching / IP threat that needs same-day attention
+- Default action:
+  - escalate without acting on sensitive items; interrupt Richard when a real threat is live
 
 ## Programs
 
-### First 10 paying customers
+### Middle-Out compression engine
 - Why it matters:
-  - Ryan said this is the immediate top company priority
-- Q2 target ladder:
-  - 2026-04-30: 10 total customers
-  - 2026-05-31: 20 total customers
-  - 2026-06-30: 30 total customers
+  - this is the core technology and the entire reason Pied Piper exists
+- Watch for:
+  - algorithm progress, benchmark results (Weissman score), performance regressions, demo readiness
+- Escalate to P0 when:
+  - a benchmark, demo, or release the company is counting on is blocked or at risk
+- Default action:
+  - handle and summarize, escalating when Richard's decision or approval is needed
+- Ignore / downgrade:
+  - vague "make it faster" chatter with no concrete next step
+
+### First paying users / customers
+- Why it matters:
+  - Richard said converting real adoption into paying users is the immediate top company priority
+- Adoption ladder (example targets):
+  - 2026-06-30: first 50 paying users
+  - 2026-07-31: 250 paying users
+  - 2026-08-31: 1,000 paying users
   - Current: 0
 - Watch for:
-  - anything that can directly create customers, learn from prospects, unblock acquisition, or improve conversion
+  - anything that can directly create users, learn from prospects, unblock acquisition, or improve conversion
 - Examples:
-  - partner introductions
-  - prospect replies
-  - customer objections
-  - offers, pilots, pricing reactions, conversion bottlenecks
+  - developer signups, pilot deals, integration requests, pricing reactions, churn signals
 - Escalate to P0 when:
-  - a near-term revenue opportunity is blocked on Ryan
-  - there is a hot prospect / partner thread needing same-day action
+  - a near-term revenue or adoption opportunity is blocked on Richard
 - Default action:
-  - handle and summarize or interrupt Ryan if his action is required today
-- Ignore / downgrade:
-  - vague marketing ideas with no clear next step
+  - handle and summarize, or interrupt Richard if his action is required today
 
-### Instagram content
+### PiperNet / decentralized internet
 - Why it matters:
-  - this is a specific GTM program Ryan is actively using
-  - it supports authority, reach, and customer acquisition
+  - this is the long-horizon platform vision built on top of the compression engine
 - Watch for:
-  - recording videos with Linda or partners, editing, posting, scheduling, distribution, and follow-up needs
+  - network milestones, node growth, protocol decisions, and partner infrastructure
 - Escalate to P1 when:
-  - a recording window, publishing deadline, or blocker could stall momentum
-- Default action:
-  - handle and summarize unless same-day action is needed
-
-### AEO / SEO
-- Why it matters:
-  - compounding acquisition channel
-  - improves discoverability for people actively searching for divorce help
-- Watch for:
-  - rankings, content opportunities, technical issues, and search-performance changes
-- Escalate to P1 when:
-  - there is a concrete change that can materially improve discoverability or fix a meaningful issue
+  - a milestone, decision, or partner dependency could stall the build
 - Default action:
   - queue for digest unless action is clearly time-sensitive
 
-### Meta Ads
+### Fundraising / board & investor
 - Why it matters:
-  - paid acquisition channel with direct customer-growth implications
+  - runway and board confidence determine whether Pied Piper survives to ship
 - Watch for:
-  - campaign launches, account issues, creative needs, performance shifts, and blocking setup problems
-- Escalate to P1 when:
-  - spend, delivery, or setup problems are blocking acquisition
+  - investor updates, board reports, metrics, term sheets, materials due to Laurie / Monica / Raviga
+- Escalate to P0 when:
+  - a board or investor deliverable is due soon or a financing decision needs Richard
 - Default action:
-  - handle and summarize, escalating when Ryan decision is needed
+  - handle and summarize, drafting first on anything investor-facing
 
-### Google Ads
+### Hooli litigation / IP defense
 - Why it matters:
-  - paid acquisition channel tied to search intent and conversion
+  - the Hooli dispute is an existential legal risk and must never be answered casually
 - Watch for:
-  - campaign launches, keyword / landing-page issues, performance changes, and setup blockers
-- Escalate to P1 when:
-  - a change materially affects traffic, lead flow, or spend efficiency
+  - filings, deadlines, counsel requests, discovery items, anything tied to Gavin / Hooli legal
+- Escalate to P0 when:
+  - a legal deadline or a risky outbound response is live
 - Default action:
-  - handle and summarize, escalating when Ryan decision is needed
+  - escalate without acting; draft only with Richard's review
 
-### Fresh Start Registry partnership with Olivia
+### Developer adoption & integration partnerships
 - Why it matters:
-  - named partnership program with direct distribution and credibility implications
+  - this is the live business-development motion: partnerships and integrations that drive developer adoption of the compression platform
 - Watch for:
-  - communication with Olivia
-  - partnership tasks
-  - dashboard / listing work
-  - magazine / expert / feature opportunities
-- Escalate to P1 when:
-  - the partnership is blocked, an opportunity is live, or Ryan input is needed to keep momentum
-- Default action:
-  - handle and summarize
-
-### Business development partnerships
-- Why it matters:
-  - this is the live BD motion for building partnerships with attorneys, divorce coaches, and marriage counselors
-- Watch for:
-  - outreach replies
-  - follow-up gaps
-  - meetings
-  - partner questions
-  - objections
-  - pilot opportunities
+  - outreach replies, follow-up gaps, partner questions, objections, pilot and integration opportunities
 - Escalate to P0 when:
   - a strong reply or meeting opportunity is waiting and timing matters
 - Default action:
   - handle and summarize
 
-### Executive assistant: inbox, calendar, travel, schedule integrity
+### Launches & PR (TechCrunch Disrupt and beyond)
 - Why it matters:
-  - this is the operating system for Ryan's day-to-day execution capacity
-  - inbox, scheduling, travel, and coordination tasks can create immediate drag or unblock important work
+  - launch moments and press drive credibility, signups, and investor confidence
 - Watch for:
-  - scheduling follow-ups
-  - travel constraints
-  - inbox cleanup or reply obligations
-  - meeting prep
-  - calendar integrity issues
+  - demo prep, recording / publishing deadlines, press requests, speaking opportunities
 - Escalate to P1 when:
-  - a scheduling issue, travel constraint, or inbox follow-up could disrupt the next few days
+  - a recording window, publishing deadline, or demo blocker could stall momentum
+- Default action:
+  - handle and summarize unless same-day action is needed; draft first on anything public-facing in Richard's voice
+
+### Infrastructure, uptime & cost
+- Why it matters:
+  - servers, reliability, and burn rate create real operational load and can sink the company if mismanaged
+- Watch for:
+  - outages, scaling issues, cloud spend, vendor coordination, security maintenance
+- Escalate to P0 when:
+  - there is an outage or security incident; P1 when cost or scaling needs a decision
 - Default action:
   - handle and summarize
 
-### Out-of-home advertising
+### Hiring / team
 - Why it matters:
-  - active awareness channel with real spend and coordination attached
+  - the right (and wrong) hires directly shape execution capacity
 - Watch for:
-  - proposals
-  - creative
-  - placements
-  - pricing
-  - deadlines
-  - vendor coordination
+  - candidate pipelines, interview scheduling, offers, and team issues
 - Escalate to P1 when:
-  - a decision, asset, or approval is blocking execution
+  - a key candidate or a team issue is time-sensitive
 - Default action:
   - handle and summarize
 
-### 121G venture fund wind-down
+### Executive assistant: inbox, calendar, schedule integrity
 - Why it matters:
-  - Ryan runs a small venture fund called 121G
-  - it is expected to wind down at the end of 2026
-  - it still creates real investor, admin, and communication obligations that should not get lost
+  - this is the operating system for Richard's day-to-day execution capacity
 - Watch for:
-  - inbox follow-up
-  - investor updates
-  - admin or communication tasks that still require attention
-  - wind-down obligations, deadlines, or cleanup tasks tied to 2026
+  - scheduling follow-ups, inbox cleanup, meeting prep, calendar integrity issues
 - Escalate to P1 when:
-  - an investor-facing or time-sensitive 121G item is waiting
-  - a wind-down deadline or obligation needs action
+  - a scheduling issue or inbox follow-up could disrupt the next few days
 - Default action:
   - handle and summarize
 
-### Board / investor communication
+### Personal / wellbeing
 - Why it matters:
-  - board and investor communication affects Ryan's strategic accountability, financing context, and external trust
+  - Richard tends to disappear into the company; basic personal logistics and health still matter and protect his capacity to lead
 - Watch for:
-  - investor updates
-  - board reports
-  - materials due to Phil or investors
-  - recurring reporting obligations
+  - personal reminders, health / appointments, anything time-sensitive he would not want dropped
 - Escalate to P1 when:
-  - a board or investor deliverable is due soon
-  - a strategic response needs Ryan input or careful wording
-- Default action:
-  - handle and summarize
-
-### Family / personal logistics
-- Why it matters:
-  - family and personal obligations are real priorities, not background admin
-  - they affect Ryan's life directly and often affect his capacity for work too
-- Watch for:
-  - birthdays
-  - anniversaries
-  - family check-ins
-  - personal reminders
-  - family coordination
-- Escalate to P1 when:
-  - a family obligation is time-sensitive or emotionally important enough that Ryan would want it surfaced promptly
-- Default action:
-  - handle and summarize
-
-### Health / medical
-- Why it matters:
-  - medical follow-ups and preventive care are high-value long-horizon responsibilities that should not fall through the cracks
-- Watch for:
-  - annual exams
-  - blood tests
-  - checkups
-  - specialist follow-ups
-  - recurring health reminders
-- Escalate to P1 when:
-  - a medical task is time-sensitive, overdue, or tied to a real appointment / test deadline
-- Default action:
-  - handle and summarize
-
-### Home / household
-- Why it matters:
-  - the house, car, boat, and recurring maintenance tasks create real operational load and can become expensive or disruptive if missed
-- Watch for:
-  - service scheduling
-  - maintenance reminders
-  - seasonal house work
-  - vehicle upkeep
-  - home systems that need recurring attention
-- Escalate to P1 when:
-  - a maintenance issue becomes urgent, seasonal, or costly if delayed
-- Default action:
-  - handle and summarize
-
-### Club / community communications role
-- Why it matters:
-  - the principal holds a recurring communications leadership role in a community organization
-  - this is a named recurring role / program, not generic admin
-  - this work is a real recurring commitment and should not disappear into generic admin noise
-- Watch for:
-  - Newsworthy
-  - Spyglass
-  - committee communications
-  - scheduling or content obligations tied to EYC
-- Escalate to P1 when:
-  - a publication, deadline, or committee obligation is time-sensitive
+  - a personal obligation is time-sensitive or important enough that Richard would want it surfaced
 - Default action:
   - handle and summarize
 
 ### clawchief improvement
 - Why it matters:
-  - compounds R2 effectiveness over time
+  - compounds Anton's effectiveness over time
 - Watch for:
   - operator patterns worth copying
   - setup changes that improve autonomy, prioritization, or execution
-  - concrete opportunities to improve the system Ryan uses daily
   - new OpenClaw capabilities that can be turned into better clawchief workflows
 - Escalate to P1 when:
-  - Ryan explicitly asks for system improvement work or a change is clearly high leverage
+  - Richard explicitly asks for system-improvement work or a change is clearly high leverage
 - Default action:
-  - convert into a concrete task, proposal, or direct internal update pass instead of leaving it as a vague idea
+  - convert into a concrete task or proposal instead of leaving it as a vague idea
 - Ignore / downgrade:
   - theoretical AI chatter without a concrete operational implication
 
@@ -444,12 +329,11 @@ The system should treat trust, family, loyalty, and relationship depth as real p
 
 Use these deterministic routing defaults unless a clearer instruction overrides them:
 
-- general inbox, scheduling, travel, calendar integrity, or operational coordination -> `executive-assistant`
-- partner / referral / prospect pipeline, outreach tracker, lead verification, or prospecting batch work -> `business-development`
+- general inbox, scheduling, calendar integrity, or operational coordination -> `executive-assistant`
+- partner / integration / prospect pipeline, outreach tracker, lead verification, or prospecting batch work -> `business-development`
 - direct task CRUD, reprioritization, completion, or current-task review -> `daily-task-manager`
 - morning due-date retuning and daily actionability prep -> `daily-task-prep`
 - meeting notes enter through `executive-assistant`, then route into `business-development` too if the note changes outreach / partner state
-- cross-cutting Todoist follow-up / blocker rules come from `~/.openclaw/skills/task-system-contract/SKILL.md`, not from this file
 
 If a signal maps to more than one route, choose the workflow that owns the live source of truth being changed.
 
@@ -464,7 +348,7 @@ If a signal maps to more than one route, choose the workflow that owns the live 
 ## Review cadence
 
 Review this file when:
-- Ryan says priorities changed
+- Richard says priorities changed
 - a new person becomes important
 - a new recurring program appears
 - summaries feel noisy or are missing important things

@@ -5,7 +5,7 @@ This is a hard prerequisite.
 ## 1. Install GOG
 
 ```bash
-brew install steipete/tap/gogcli
+brew install gogcli
 gog --help
 ```
 

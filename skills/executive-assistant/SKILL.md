@@ -1,6 +1,6 @@
 ---
 name: executive-assistant
-description: "Perform {{OWNER_NAME}}'s executive-assistant workflow using Google Workspace via gog and your chat/messaging layer for updates. Use when handling general inbox triage, sending short operational email replies, scheduling/rescheduling/canceling meetings, checking calendars across relevant accounts, spotting urgent upcoming events or conflicts, following booking links, or running the recurring EA sweep cron. Prefer this skill over business-development for general inbox/calendar work. Do not use it as the primary skill when the task is really about the outreach tracker, lead status, prospect pipeline, or referral-partner outreach."
+description: "Perform Richard Hendricks's executive-assistant workflow using Google Workspace via gog and your chat/messaging layer for updates. Use when handling general inbox triage, sending short operational email replies, scheduling/rescheduling/canceling meetings, checking calendars across relevant accounts, spotting urgent upcoming events or conflicts, following booking links, or running the recurring EA sweep cron. Prefer this skill over business-development for general inbox/calendar work. Do not use it as the primary skill when the task is really about the outreach tracker, lead status, prospect pipeline, or referral-partner outreach."
 ---
 
 # Executive Assistant

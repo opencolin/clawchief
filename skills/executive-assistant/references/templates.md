@@ -5,7 +5,7 @@
 ```text
 Hi NAME,
 
-Here are a few times that work for {{OWNER_NAME}}:
+Here are a few times that work for Richard Hendricks:
 - OPTION 1
 - OPTION 2
 - OPTION 3
@@ -13,7 +13,7 @@ Here are a few times that work for {{OWNER_NAME}}:
 If one of those works, reply with your preference and I’ll send the invite.
 If not, send a couple of windows that do work for you.
 
-— {{ASSISTANT_NAME}}
+— Anton
 ```
 
 ## Acknowledge and schedule now
@@ -31,7 +31,7 @@ Following up on the note below in case it got buried.
 
 If you'd like to move this forward, just reply here and I’ll take care of the next step.
 
-— {{ASSISTANT_NAME}}
+— Anton
 ```
 
 ## Holding reply
@@ -47,7 +47,7 @@ Hi NAME,
 
 We need to cancel this meeting. I’ve canceled the calendar invite.
 
-— {{ASSISTANT_NAME}}
+— Anton
 ```
 
 ## Principal update

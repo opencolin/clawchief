@@ -1,6 +1,6 @@
 ---
 name: daily-task-manager
-description: "Manage {{OWNER_NAME}}'s day-to-day task list using a single canonical workspace file that stays synced across sessions and heartbeats. Use when the user asks to add, remove, complete, defer, reprioritize, summarize, or review current tasks / todos; when a heartbeat or check-in should reference the live task list; or when task state was mentioned in another session and must be reflected centrally."
+description: "Manage Richard Hendricks's day-to-day task list using a single canonical workspace file that stays synced across sessions and heartbeats. Use when the user asks to add, remove, complete, defer, reprioritize, summarize, or review current tasks / todos; when a heartbeat or check-in should reference the live task list; or when task state was mentioned in another session and must be reflected centrally."
 ---
 
 # Daily Task Manager

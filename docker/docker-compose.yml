@@ -1,0 +1,32 @@
+name: clawchief
+
+services:
+  clawchief:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: clawchief:local
+    container_name: clawchief
+    restart: unless-stopped
+    environment:
+      # --- Model provider: set ONE of these in docker/.env -------------------
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      # Generic OpenAI-compatible provider (e.g. Nebius Token Factory):
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-}
+      # --- gog (Google Workspace CLI): encrypted file keyring for headless use -
+      GOG_HOME: /home/node/.gog
+      GOG_KEYRING_BACKEND: file
+      GOG_KEYRING_PASSWORD: ${GOG_KEYRING_PASSWORD:-}
+    volumes:
+      - clawchief-state:/home/node/.openclaw
+      - clawchief-gog:/home/node/.gog
+    # The Gateway binds loopback inside the container; drive it with
+    # `docker compose exec clawchief node openclaw.mjs <cmd>`.
+    # Uncomment to expose the Control UI on the host:
+    # ports:
+    #   - "127.0.0.1:18789:18789"
+
+volumes:
+  clawchief-state:
+  clawchief-gog:

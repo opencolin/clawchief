@@ -12,10 +12,10 @@ The install is good only if every item below passes.
 
 ## Skills
 
-- [ ] `executive-assistant` is installed in `~/.openclaw/skills/`
-- [ ] `business-development` is installed in `~/.openclaw/skills/`
-- [ ] `daily-task-manager` is installed in `~/.openclaw/skills/`
-- [ ] `daily-task-prep` is installed in `~/.openclaw/skills/`
+- [ ] `executive-assistant` is installed in `~/.openclaw/workspace/skills/`
+- [ ] `business-development` is installed in `~/.openclaw/workspace/skills/`
+- [ ] `daily-task-manager` is installed in `~/.openclaw/workspace/skills/`
+- [ ] `daily-task-prep` is installed in `~/.openclaw/workspace/skills/`
 
 ## Workspace
 

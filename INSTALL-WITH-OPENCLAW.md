@@ -39,7 +39,7 @@ Optional additional values if you use more calendars:
 
 ## 2. Install the skills
 
-Copy these directories into `~/.openclaw/skills/`:
+Copy these directories into `~/.openclaw/workspace/skills/`:
 
 - `skills/executive-assistant`
 - `skills/business-development`

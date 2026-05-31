@@ -1,6 +1,6 @@
 ---
 name: business-development
-description: "Manage {{BUSINESS_NAME}} business-development and outreach-tracking work using Google Workspace via gog. Use when handling prospecting replies, referral-partner outreach, updating the outreach tracker, logging lead status changes, booking or confirming outreach meetings tied to a lead / prospect, or maintaining the operational record of sales / outreach conversations. Prefer this skill over executive-assistant whenever the task touches the outreach tracker, lead status, prospect pipeline, or referral-partner outreach, even if scheduling is involved."
+description: "Manage Pied Piper business-development and outreach-tracking work using Google Workspace via gog. Use when handling prospecting replies, referral-partner outreach, updating the outreach tracker, logging lead status changes, booking or confirming outreach meetings tied to a lead / prospect, or maintaining the operational record of sales / outreach conversations. Prefer this skill over executive-assistant whenever the task touches the outreach tracker, lead status, prospect pipeline, or referral-partner outreach, even if scheduling is involved."
 ---
 
 # Business Development
@@ -42,7 +42,7 @@ At minimum define:
 - any follow-up cadence overrides
 
 If no more specific override exists, default to:
-- prospecting inside `{{TARGET_MARKET}}` in `{{TARGET_GEOGRAPHY}}`
+- prospecting inside `engineering and infrastructure teams` in `the SF Bay Area`
 - adding only verified leads
 - using the default follow-up cadence in this skill
 

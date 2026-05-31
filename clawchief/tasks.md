@@ -1,63 +1,69 @@
 # Current Tasks
 
-Last updated: YYYY-MM-DD HH:MM TZ
+Last updated: 2026-05-31 09:00 America/Los_Angeles
 Canonical file: use this file as the source of truth across sessions
 
 ## Today
 
 ### Principal
 
-#### Revenue / customer growth
-- [ ] Highest-priority principal task
+#### First paying users / customers
+- [ ] Approve the pricing tiers for the first paying-user launch
 
-#### Executive assistant: inbox, calendar, travel, schedule integrity
-- [ ] Principal decision or review task
+#### Fundraising / board & investor
+- [ ] Review Laurie's term-sheet redline before the Raviga board call
+
+#### Middle-Out compression engine
+- [ ] Sign off on the benchmark (Weissman score) numbers for the Disrupt demo
 
 ### Assistant
 
-#### Executive assistant: inbox, calendar, travel, schedule integrity
-- [ ] Follow up on a scheduling or inbox item — due YYYY-MM-DD
+#### Executive assistant: inbox, calendar, schedule integrity
+- [ ] Confirm the Raviga board meeting time with Monica — due 2026-06-02
 
-#### Business development / partnerships
-- [ ] Process partner replies or outreach follow-ups — due YYYY-MM-DD
+#### Developer adoption & integration partnerships
+- [ ] Process partner replies from this week's dev-tool outreach batch — due 2026-06-01
+
+#### Launches & PR (TechCrunch Disrupt and beyond)
+- [ ] Lock the TechCrunch Disrupt demo slot and Richard's travel — due 2026-06-03
 
 ## Every weekday
 
-#### Revenue / customer growth
-- Ship one concrete growth action
+#### First paying users / customers
+- Ship one concrete adoption action
 
-#### Executive assistant: inbox, calendar, travel, schedule integrity
-- Clear priority inboxes
+#### Executive assistant: inbox, calendar, schedule integrity
+- Clear Richard's priority inbox
 
 ## Backlog with due date
 
-- Assistant: future follow-up task — due YYYY-MM-DD
-- Principal: important task with a near-term due date — due YYYY-MM-DD
+- Assistant: Send the monthly investor update draft to Richard for review — due 2026-06-05
+- Principal: Decide on Gilfoyle's infrastructure scaling proposal — due 2026-06-06
 
 ## Recurring reminders
 
-- [ ] Reminder task — due YYYY-MM-DD HH:MM TZ — recurs weekly every 1
+- [ ] Weekly metrics snapshot for the board — due 2026-06-02 09:00 America/Los_Angeles — recurs weekly every 1
 
 ## Backlog
 
-- Task with no immediate date
-- Another backlog item
+- Evaluate moving PiperNet nodes onto independent infrastructure
+- Draft the developer integration quickstart guide
 
 ## To research
 
-- Topic, tool, or workflow to investigate later
+- Whether Jian Yang has shipped a Pied Piper clone, and any IP exposure
 
 ## Weekly
 
-- Weekly review task
+- Weekly priority review with Jared
 
 ## Monthly
 
-- Monthly review task
+- Burn-rate and runway review
 
 ## Quarterly
 
-- Quarterly review task
+- Board deck refresh
 
 ## Rules
 
