@@ -32,10 +32,14 @@ read the last tick + `HANDOFF.md` and resume.
 - [tick 16] Created 5 git worktrees: `/Users/colin/clawchief-v0.1 … -v2.0` on `release/vX` branches.
 - [tick 17] Launched release-labs workflow `wf_686688ed-fe2` (one agent/release → `releases/vX.md`). Note: workflow `args` came through undefined → inline the data in the script instead.
 
+- [tick 18] Release-labs workflow `wf_686688ed-fe2` produced hands-on labs. Distributed + committed into worktrees: v0.1, v1.0, v1.5, v2.0 (each on its `release/vX` branch). v0.5 pending (agent verbose).
+- [tick 19] Set up crons (EA sweep / daily-task-prep / BD) — hit the `operator.admin` scope-upgrade gate; documented as a security teaching point. Heartbeat already proves proactivity.
+- [tick 20] README turned into front-door index (releases + modules + run docs).
+
 ## Next
-- Distribute returned labs into each worktree (`/Users/colin/clawchief-vX/workshop/releases/vX.md`) + commit per worktree.
-- Build top-level workshop INDEX tying modules + releases.
-- gog Google auth — BLOCKED on user's OAuth desktop-client JSON.
+- Distribute v0.5 lab when ready.
+- Final: update HANDOFF to "complete"; final summary; (optional) merge release branches.
+- gog Google auth — BLOCKED on user's OAuth desktop-client JSON (user opted in).
 
 ## Demo runbook (verified commands)
 ```
